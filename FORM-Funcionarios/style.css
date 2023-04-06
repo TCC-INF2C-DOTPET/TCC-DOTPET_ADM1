@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: rgb(208,137,255);
+    background: linear-gradient(124deg, rgba(208,137,255,1) 0%, rgba(255,145,208,1) 50%, rgba(252,176,69,1) 100%);    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    min-width: 500px;
+    min-height: 70vh;
+    padding: 3rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.267);
+    border-radius: 30px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    color: #F0B241;
+    font-size: 3rem;
+    text-align: center
+    
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.colunas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+.coluna-1{
+
+    width: 40%;
+}
+
+
+.coluna-2{
+
+    width: 40%;
+}
+
+
+.menores{
+
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+
+}
+
+
+
+
+
+.input-field {
+    position: relative;
+}
+
+form .input-field {
+    margin-bottom: 1.6rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -4px;
+    left: 0;
+    background: rgba(36, 35, 35, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #8104ff, #8f0eff);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(34, 32, 32, 0.842);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+.botoes {
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+
+
+.cadastrar{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    align-items: center;
+    background: #ffd900;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+
+
+.cadastrar:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #44ff7c, #0affca);
+}
+
+
+
+.cadastrar a{
+    color: #191a19;
+    text-decoration: none;
+}
+
+
+
+
+.voltar{
+    text-align: center;
+    margin-top: 2rem;
+   
+}
+
+
+
+
+
+
+
+
